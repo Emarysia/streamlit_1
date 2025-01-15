@@ -1,15 +1,10 @@
-import os
-
-import openai 
+import openai
 import streamlit as st
 
 from parse_hh import get_job_description, get_candidate_info
 
-api_key = os.getenv("OPENAI_API_KEY")
-if not api_key:
-    st.error("API-ключ OpenAI не найден. Убедитесь, что он установлен в переменной окружения.")
-else:
-    openai.api_key = api_key
+# Получение API-ключа из файла secrets.toml
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Промпт для системы
 SYSTEM_PROMPT = """
@@ -23,8 +18,8 @@ SYSTEM_PROMPT = """
 # Функция для работы с OpenAI GPT
 def request_gpt(system_prompt, user_prompt):
     try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
@@ -32,7 +27,7 @@ def request_gpt(system_prompt, user_prompt):
             max_tokens=1000,
             temperature=0,
         )
-        return response.choices[0].message.content
+        return response.choices[0].message["content"]
     except Exception as e:
         return f"Ошибка при запросе к GPT: {e}"
 
