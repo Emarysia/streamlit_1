@@ -1,0 +1,25 @@
+2025-01-14 14:19:43,786 - WARNING - CAPTCHA обнаружена! Попробуйте использовать прокси или замедлить запросы.
+2025-01-14 14:19:45,112 - WARNING - CAPTCHA обнаружена! Попробуйте использовать прокси или замедлить запросы.
+2025-01-15 00:12:06,588 - WARNING - CAPTCHA обнаружена! Попробуйте использовать прокси или замедлить запросы.
+2025-01-15 00:12:06,992 - WARNING - CAPTCHA обнаружена! Попробуйте использовать прокси или замедлить запросы.
+2025-01-15 00:12:10,040 - WARNING - CAPTCHA обнаружена! Попробуйте использовать прокси или замедлить запросы.
+2025-01-15 00:12:10,374 - WARNING - CAPTCHA обнаружена! Попробуйте использовать прокси или замедлить запросы.
+2025-01-15 12:52:38,591 - INFO - Успешно загружена страница. Первые 500 символов HTML:
+<!DOCTYPE html>
+<html class="desktop" lang="ru"><!--request: 17369347579756eed1f3bbb5afd9bcb8--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title data-rh="">Работа видеооператором в Краснодаре: свежие вакансии на krasnodar.hh.ru</title><meta name="twitter:card" content="summary_large_image"><meta data-rh="" name="description" content="Найти работу видеооператором в Краснодаре. ✅ Актуальные объявления о вакансиях в
+2025-01-15 12:52:38,633 - INFO - Извлеченные данные о вакансии:
+Название: Название вакансии не найдено
+Компания: Компания не указана
+Зарплата: Зарплата не указана
+Местоположение: Местоположение не указано
+Описание: Описание вакансии не указано...
+2025-01-15 12:52:40,181 - INFO - Успешно загружена страница. Первые 500 символов HTML:
+<!DOCTYPE html>
+<html class="desktop" lang="ru"><!--request: 173693475949211438a8a1de1af051f3--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title data-rh="">Резюме Шеф-повар</title><meta name="twitter:card" content="summary_large_image"><meta name="description" class="HH-PageLayout-Description" content="spb.hh.ru — сервис, который помогает найти работу и подобрать персонал в Санкт-Петербурге более 20 лет! Создавай
+2025-01-15 12:52:40,210 - INFO - Извлеченные данные о кандидате:
+Имя: Кандидат
+Местоположение: Казань
+Должность: Шеф-повар
+Статус: Активно ищет работу
+2025-01-15 12:52:40,213 - INFO - Извлечено 10 записей об опыте работы.
+2025-01-15 12:52:41,074 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
