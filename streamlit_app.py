@@ -5,9 +5,11 @@ import streamlit as st
 
 from parse_hh import get_job_description, get_candidate_info
 
-client = openai.Client(
-    api_key=os.getenv("OPENAI_API_KEY")
-)
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    st.error("API-ключ OpenAI не найден. Убедитесь, что он установлен в переменной окружения.")
+else:
+    openai.api_key = api_key
 
 # Промпт для системы
 SYSTEM_PROMPT = """
